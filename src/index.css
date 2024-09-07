@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #000000;
+  
+  --secondary-bg-color: #f0f0f0;
+  --secondary-text-color: #737373;
+
+  --yellow-bg-color:#FEFA17;
+  --light-blue: #E3F0FF; 
+  --third-bg-color:var(--primary-text-color);
+  --third-text:#ffffff;
+  --input:#F2F4F6;
+  --gray-bg :#EFEFEB;
+  
+  --red-10:#FCF2FA;
+  --green-10:#E4F9F9;
+  --yello-10:#E3F0FF;
+  --pink-10:#F6F3FC;
+  --green-bg:#E4F9F9;
+
+
+}
+
+
+[data-theme="dark"] {
+  --primary-bg-color: #10192c;
+  --primary-text-color: #e9e9e9;
+  --secondary-bg-color: #2d3748;
+  --secondary-text-color: #e2e8f0;
+  --light-blue: #0e1930; 
+  --yellow-bg-color:#343301;
+  --third-bg-color:var(--primary-text-color);
+  --third-text:#000000;
+  --input:#03111e;
+  --gray-bg :#151f27;
+  --red-10:#1a141a;
+  --green-10:#202a2a;
+  --yello-10:#2c2f33;
+  --pink-10:#35333b;
+  --green-bg:#010718;
+
+
+
+
+
+}
+
+body{
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+*{
+    scrollbar-width: none;
+}
+@layer components {
+    .btn-blue {
+      @apply xl:text-[32px] lg:text-[30px] md:text-[28px] sm:text-[24px];
+    }
+  }
+  
